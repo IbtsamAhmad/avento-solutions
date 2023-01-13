@@ -1,0 +1,446 @@
+@media screen  {
+    
+}
+
+@media (min-width: 2001px) {
+
+}
+@media (min-width: 1900px) { }
+@media (max-width: 1300px) { 
+//   .header-container .site-header .custom-class .navbar-nav a {
+//     margin: 0 0.5rem;
+// }
+}
+
+@media (max-width: 990px) {
+    .header-container {
+        .site-header {
+            .navbar-brand{
+                padding: 0;
+                margin: 0;
+                width: 40%;
+            }
+            .logo {
+                margin: 0 !important;
+                width: 80% !important;
+            }
+            &.active {}
+            .dropdown-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    margin-bottom: 0 !important;
+                }
+                svg {}
+            }
+            .custom-class {
+                background-color: white;
+                padding: 10px 0px;
+                margin: 5px 0px;
+                .navbar-nav {
+        
+                    a {}
+                }
+    
+                .btn-hire-us {
+                    display: block;
+                    margin: 20px auto;
+                }
+            }
+        }
+    }
+    .hero-section {
+        text-align: center;
+        padding-top: calc(120px + 0rem);
+        .hero-row{
+        flex-direction: column-reverse;
+        }
+        .heading {
+        font-size: 30px;
+        padding-top: 20px;
+        }
+        .description {
+        
+        }
+        .btn-wrap {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          .hero-btn {
+          
+          }
+      
+          .more-link {
+          padding-top: 20px;
+          }
+        }
+      
+        .hero-img-column {
+          .home-hero-img {
+          }
+        }
+      
+        .goal-container {
+        padding-top: 2rem;
+          .heading {
+          padding-left: 0;
+          }
+          .description {
+          }
+        }
+      }
+      .servicesContainer {
+        padding-top: 0rem;
+        .heading {
+         width: 100%;
+         line-height: auto;
+        }
+        .serviceCards-row {
+          .service-card {
+
+            .card-body {
+            align-items: center;
+            }      
+            svg {
+
+            }
+      
+            h1 {
+     
+            }
+      
+            p {
+             text-align: center;
+            }   
+          }
+        }
+      }      
+      .engModel-container {
+        margin: 0rem 0 2rem 0;
+        text-align: center;
+        .heading {
+    
+        }
+      
+        .description {
+         width: 100%;
+        }
+      
+        .engageCard {
+   
+          .card-body {
+          
+          }
+      
+          svg {
+       
+          }
+      
+          h1 {
+          
+          }
+      
+          p {
+         
+          }
+        }
+      
+        .engageBtn {
+        }
+      
+        .buttonTwo {
+        
+        }
+      
+        .cardTwo {
+       
+        }
+      }
+      .technologies-container{
+        margin: 3rem 0 5rem 0;
+        .heading{
+          text-align: center;
+        }
+        .description{
+            text-align: center;
+            width: 100%;
+        }
+        .tabs-container{
+
+         .technology-col{
+        width: 30%;
+            .technologyName{
+      
+            }
+         }
+            .nav-item{
+          &:nth-last-child(1) {
+            .nav-link{
+                svg{
+            margin-left: -5rem;
+                }
+            }
+     
+         }
+            }
+            .nav-link{
+                }
+                .nav-link.active{
+           
+                }
+        }
+    }
+    
+      .testimonials-container {
+       background: #ffffff;
+       height: auto;
+       margin-bottom: 2rem;
+        .heading {
+
+        }
+        .swiper {
+            width: 100%;
+            height: 390px;
+            margin: 0% 0% 0% 3%;
+        }
+      
+        .swiper-slide {
+            height: auto;
+            width: 90% !important;
+            background: #ffffff;
+            padding: 10px 10px;
+          .testimonial-img {
+          }
+          .review {
+    
+          }
+          .location {
+
+          }
+          .testimonial-footer {
+    
+            .company {
+            
+            }
+            .review-stars {
+        
+            }
+          }
+        }
+        .swiper-button-next {
+        }
+        .swiper-button-prev {
+        }
+      }
+
+      .find-us-sec {
+        .tab-title{
+        }
+      
+        .nav-tabs{
+ 
+          button{    
+   
+          }
+        }
+        .nav-link{
+
+        }
+        .nav-link.active{
+
+        }
+        .heading{
+   
+        }
+        .tab-description{
+        width: 100%;
+        }
+        .map-image{
+
+        }
+      
+      }
+      .form-container {
+        .form-heading {
+      
+        }
+        .form-info {
+        width: 100%;
+        }
+        .contact-form {
+          .planeOne {
+          display: none;
+            svg {
+  
+            }
+          }
+      
+          .planeTwo {
+         display: none;
+            svg {
+
+            }
+          }
+      
+          .form-input {
+      
+          }
+      
+          .form-error {
+   
+          }
+          .message {
+  
+          }
+      
+          .submit-btn {
+     
+          }
+        }
+        .connect {
+
+          span{
+ 
+          }
+          svg {
+         
+          }
+        }
+      }
+      .teams-container {
+        .teamsRow-container {
+            padding-top: 7rem;
+            text-align: center;
+            .team-colOne {
+          padding-left: 0;
+            }
+    
+            .heading {
+    
+            }
+    
+            .description {
+    
+            }
+    
+            .hireButton {
+            
+            }
+    
+            .teamsImgColumn {
+              
+            }
+    
+            .teamsHeaderimg {}
+        }
+    
+    }
+    
+.portfolioContainer {
+    .projects-container {
+        margin-top: 7rem;
+      .heading{
+  
+      }
+      .projectCard{
+        .projectImage{
+  
+        }
+        .project-footer{
+     
+            .project-title{
+            
+            }
+            .project-category{
+         
+            }
+            .project-technology{
+  
+            }
+        }
+      }
+      .owl-dots{
+        .owl-dot{
+  
+        }
+        .active{
+  
+        
+        }
+      }
+    }
+    .customersContainer{
+        text-align: center;
+        .customer-numbers{
+  
+        }
+        .customers-description{
+  
+        }
+        .customer-icons{
+            .col-sm-6{
+            width: 50%;
+            }
+            svg{
+          
+            }
+        }
+    }
+    }
+
+    .contactPageContainer{
+        margin: 7rem 0 2rem 0;
+    }
+    
+    .team-cards-container {
+    
+        .heading {
+    
+        }
+        .nav-tabs{
+    
+            button{    
+    
+            }
+          }
+          .nav-link{
+    
+          }
+          .nav-link.active{
+        
+          }
+    
+        .team-card {
+    
+            .social-links {
+       
+                svg{
+      
+                }
+            }
+            .team-img{
+    
+            }
+            .team-name{
+     
+            }
+            .team-post{
+        
+            }
+        
+        }
+    }
+    .footerContainer {
+        margin: 0rem 0 2rem 0;
+        text-align: center;
+        .col-header {}
+    
+        .footerLink {
+    
+            svg {}
+        }
+    
+        .copyRight {}
+    }
+}

@@ -1,0 +1,64 @@
+@import "./variables";
+
+
+
+.technologies-container{
+    overflow: hidden;
+    margin: 6rem 0 5rem 0;
+    .heading{
+    @include aventoHeading;
+    }
+    .description{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #454545;
+        width: 40%;
+    }
+    .tabs-container{
+        margin: 4rem 0 0 0;
+     .technology-col{
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid  #F6F7F9;
+        .technologyName{
+        font-weight: 400;
+        font-size: 16px;
+        color: #999999;
+        margin-bottom: 0;
+        }
+     }
+        .nav-item{
+    &:nth-last-child(1) {
+        .nav-link{
+            svg{
+        margin-left: -5rem;
+            }
+        }
+ 
+     }
+        }
+        .nav-link{
+            text-align: center;
+            border-radius: 50px !important;
+            margin: 0 30px 30px 0px;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 8px 25px;
+            color: #454545 !important;
+            border: 1px solid #e9ecef !important;
+          
+            }
+            .nav-link.active{
+              background: #61BDD2 !important; 
+              color: #F6F7F9 !important;
+            //   svg{
+            //     path{
+            //    fill: red !important;
+            //     }
+            //   }
+            }
+    }
+}

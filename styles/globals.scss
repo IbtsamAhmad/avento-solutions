@@ -1,0 +1,45 @@
+$primary: #61bdd2;
+$theme-colors: (
+  "primary": $primary,
+);
+
+@import "./supporting/fonts";
+@import "./supporting/variables";
+@import "./supporting/header";
+@import "./supporting/services";
+@import "./supporting/hero";
+@import "./supporting/technologies";
+@import "./supporting/portfolioPage";
+@import "./supporting/teamPage";
+@import "./supporting/contactPage";
+@import "./supporting/responsive";
+
+body {
+  font-family: "Proxima Nova" !important;
+}
+.container{
+  max-width: 1195px !important;
+  width:90%;
+  height:auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  padding-left: 0 !important;
+}
+
+.layout-container{
+  overflow: hidden;
+}
+
+

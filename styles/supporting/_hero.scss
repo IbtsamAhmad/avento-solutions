@@ -1,0 +1,279 @@
+@import "./variables";
+
+.hero-section {
+  background: linear-gradient(180deg,#e5efff 0,rgba(229,239,255,.262661) 83.7%,rgba(229,239,255,0) 100%);
+    min-height: 100vh;
+    padding-top: calc(120px + 2rem);
+  padding-bottom: 3rem;
+  height: 100vh;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  // padding: 2rem 0 0rem 0;
+  .heading {
+    @include aventoHeading;
+    font-size: 45px;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #454545;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .btn-wrap {
+    .hero-btn {
+      @include aventoButton;
+      padding: 6px 25px;
+
+      &:hover {
+        border: 1px solid #61bdd2;
+      }
+    }
+
+    .more-link {
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #299ef3 !important;
+      margin-left: 20px;
+    }
+  }
+
+  .hero-img-column {
+    display: flex;
+    justify-content: center;
+
+    .home-hero-img {
+      margin-top: -3rem;
+    }
+  }
+
+  .goal-container {
+    padding-top: 5rem;
+
+    .heading {
+      font-size: 40px;
+      padding-left: 3rem;
+    }
+
+    .description {
+    }
+  }
+}
+
+.servicesContainer {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  .heading {
+    @include aventoHeading;
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  .serviceCards-row {
+    padding-top: 2rem;
+    .service-card {
+      background: #ffffff;
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: all 0.4s ease;
+      height: 300px;
+      margin: 20px;
+      border: unset;
+      .card-body {
+        padding: 22px !important;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      svg {
+        font-size: 3rem;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 20px;
+        color: #071938;
+        line-height: 50px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #454545;
+        text-align: left;
+        line-height: 24px;
+      }
+
+      &:hover {
+        transform: translateY(-20px) !important;
+        background: linear-gradient(180deg, #61BDD2 0%, #4194A7 100%);
+        color: #ffffff;
+        h1{
+          color: #ffffff;
+        }
+        p{
+          color: #ffffff;
+        }
+        svg{
+     path{
+     }
+        }
+      }
+    }
+  }
+}
+
+.engModel-container {
+  margin: 4rem 0 2rem 0;
+  text-align: center;
+  .heading {
+    @include aventoHeading;
+  }
+
+  .description {
+    font-size: 18px;
+    color: #454545;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .engageCard {
+    padding-top: 2rem;
+    background: linear-gradient(180deg, #61bdd2 0%, #4194a7 100%);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+    height: 350px;
+    margin-top: 40px;
+    border: unset;
+    .card-body {
+      padding: 22px !important;
+    }
+
+    svg {
+      position: absolute;
+      top: 10%;
+      right: 9%;
+      font-size: 3rem;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 20px;
+      color: #ffffff;
+      line-height: 60px;
+      margin-top: 25px;
+    }
+
+    p {
+      font-size: 17px;
+      color: #ffffff;
+      line-height: 25px;
+      width: 90%;
+    }
+  }
+
+  .engageBtn {
+    background: #ffffff;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #4a9fb3;
+    padding: 7px 19px;
+    border: 1px solid #4194a7;
+
+    &:hover {
+      background: #4a9fb3 !important;
+      color: #fff !important;
+      border: 1px solid #fff !important;
+    }
+  }
+
+  .buttonTwo {
+    color: #071938;
+    border: 1px solid #071938;
+
+    &:hover {
+      color: #fff !important;
+      background: #071938 !important;
+    }
+  }
+
+  .cardTwo {
+    background: #071938;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  }
+}
+.testimonials-container {
+  // padding: 2rem 0 5rem 0;
+  // background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+  background-image: url("/assets/images/testimonials-section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 759px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  .heading {
+    @include aventoHeading;
+    margin-bottom: 3rem;
+  }
+  .swiper {
+    width: 70%;
+    height: 390px;
+    margin: 15% 0% 0% 30%;
+  }
+
+  .swiper-slide {
+    width: 520px;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+    border-radius: 20px;
+    padding: 30px 15px;
+    .testimonial-img {
+    }
+    .review {
+      font-size: 16px;
+      color: #454545;
+      line-height: 30px;
+    }
+    .location {
+      font-size: 16px;
+      color: #454545;
+      margin-left: 25%;
+      text-align: left;
+    }
+    .testimonial-footer {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 25%;
+      .company {
+        font-weight: 700;
+        font-size: 20px;
+        color: #454545;
+      }
+      .review-stars {
+        margin-left: 10px;
+      }
+    }
+  }
+  .swiper-button-next {
+  }
+  .swiper-button-prev {
+  }
+}

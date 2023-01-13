@@ -1,0 +1,125 @@
+@import "./variables";
+.header-container{
+  .site-header {
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.5s;
+    background-color: transparent;
+    width: 100%;
+    .navbar-brand{
+      padding: 0;
+      margin: 0;
+    }
+  //  .navbar-collapse {
+  //     flex-basis: unset !important;
+  //   /* flex-basis: auto; */
+  //   }
+    .logo {
+      width: 50%;
+      height: auto;
+      cursor: pointer;
+    }
+    &.active{
+      background-color: #fff;
+    box-shadow: 0 1px 10px #e0e0e0;
+    padding: 0.7rem 0;
+    }
+    .dropdown-toggle{
+      display: flex;
+      align-items: flex-start;
+      svg{
+        font-size: 15px !important;
+        transition: all 0.3s;
+        margin-left: 7px;
+        &:hover{
+          transform: rotate(180deg);
+        }
+      }
+      &:hover{
+        svg{
+          font-size: 15px !important;
+          transform: rotate(180deg);
+        }
+      }
+   
+    }
+    .dropdown-toggle::after{
+    display: none;
+    }
+    .custom-class {
+      justify-content: end;
+      .navbar-nav {
+        a {
+          color: #272d4e !important;
+          margin: 0 6px;
+          font-size: 18px;
+          position: relative;
+        }
+        a:active::after{
+          left: 50%;
+          bottom: 0;
+          content: '';
+          width: 5px;
+          height: 5px;
+          background-color: #61bdd2;
+          transform: translateX(-50%);
+          transition: all .5s;
+          opacity: 0;
+          visibility: hidden;
+        }
+        & a:hover {
+          color: #61bdd2 !important;
+        }
+        & a:active {
+          color: #61bdd2 !important;
+          font-weight:bold;
+        }
+       
+      }
+      .btn-hire-us {
+        @include aventoButton;
+        margin-left: 3rem;
+        font-size: 16px;
+        min-width: 170px;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+
+.footerContainer {
+  // margin: 3rem 0 2rem 0;
+  background: linear-gradient(0deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+  .col-header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+    color: #071938;
+  }
+  .footerLink {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    color: #454545 !important;
+    svg {
+      margin-left: -25px;
+      margin-right: 5px;
+    } 
+    &:hover{
+      text-decoration: underline !important;
+      color: #61bdd2 !important;
+    }
+  }
+  .copyRight {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #454545;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+}

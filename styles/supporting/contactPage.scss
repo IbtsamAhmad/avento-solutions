@@ -1,0 +1,147 @@
+@import "./variables";
+
+.contactPageContainer {
+  margin: 9rem 0 2rem 0;
+}
+.form-container {
+  text-align: center;
+   overflow: hidden;
+  .form-heading {
+    @include aventoHeading;
+  }
+
+  .form-info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #454545;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    margin-top: 2rem;
+    position: relative;
+
+    .planeOne {
+      position: absolute;
+      top: -46%;
+      left: 3%;
+      z-index: -1;
+      svg {
+        font-size: 40rem;
+      }
+    }
+
+    .planeTwo {
+      position: absolute;
+      top: -26%;
+      right: 0%;
+      z-index: -1;
+      svg {
+        font-size: 40rem;
+      }
+    }
+
+    .form-input {
+      display: block;
+      width: 100%;
+      margin: 20px 0;
+      background: #F6F7F9;
+      border-radius: 30px;
+      padding: 12px;
+      border: none;
+      outline: none;
+      z-index: 2;
+      position: relative;
+      &:focus{
+        outline: 1px solid #61BDD2;
+      }
+    }
+
+    .form-error {
+      color: #f80505;
+      text-align: left;
+    }
+    .message {
+      height: 90%;
+    }
+
+    .submit-btn {
+      @include aventoButton;
+      margin: 10px 0 0 0;
+      width: 65%;
+      z-index: 2;
+      position: relative;
+      &:hover{
+        border: 1px solid #61bdd2 !important;
+      }
+    }
+  }
+  .connect {
+    font-weight: 300;
+    font-size: 18px;
+    color: #454545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+      background: #454545;
+      width: 26px;
+      height: 1px;
+      margin: 0 -10px 0 10px;
+    }
+    svg {
+      font-size: 8rem !important;
+      margin-left: 20px !important;
+    }
+  }
+}
+
+.find-us-sec {
+  text-align: center;
+  .tab-title{
+   text-align: center;
+
+  }
+
+  .nav-tabs{
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    border: none;
+    button{    
+    border-radius: 50px;
+    margin: 0 30px 30px 0px;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 7px 25px;
+    }
+  }
+  .nav-link{
+  color: #454545 !important;
+  border: 1px solid #e9ecef !important;
+  }
+  .nav-link.active{
+    background: #61BDD2 !important; 
+    color: #F6F7F9 !important;
+  }
+  .heading{
+   @include aventoHeading;
+  }
+  .tab-description{
+  width: 45%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #454545;
+  }
+  .map-image{
+  width: 70%;
+  height: auto;
+  margin: 30px 0;
+  }
+
+}
