@@ -2,16 +2,16 @@
 
 .teams-container {
     overflow: hidden;
-
+      background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
     .teamsRow-container {
-        background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
-      min-height: 100vh;
+        min-height: 100vh;
         .team-colOne {
-            padding-left: 10%;
+            // padding-left: 10%;
         }
 
         .heading {
             @include aventoHeading;
+           font-size: 45px;
         }
 
         .description {
@@ -22,8 +22,14 @@
         }
 
         .hireButton {
+            // @include aventoButton;
+            // padding: 10px 20px;
+             margin-top: 25px;
             @include aventoButton;
-            padding: 2px 16px;
+            font-size: 16px;
+            min-width: 170px;
+        
+            padding: 0.5rem 20px;
         }
 
         .teamsImgColumn {
@@ -31,6 +37,9 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            img{
+                width: 80%;
+            }
         }
 
         .teamsHeaderimg {}
@@ -55,6 +64,7 @@
         font-weight: 700;
         font-size: 16px;
         padding: 7px 25px;
+        width: 125px;
         }
       }
       .nav-link{
@@ -114,6 +124,22 @@
             color: #FFFFFF;
             }
         }
+    }
+    .hire-btn{
+        @include aventoButton;
+        padding: 5px 27px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+//         width: 210px;
+// height: 50px;
+// background: #61BDD2;
+// border-radius: 50px;
+// font-family: 'Proxima Nova';
+// font-weight: 700;
+// font-size: 16px;
+// letter-spacing: 2px;
+// color: #FFFFFF;
+// margin: 2rem auto;
     }
 }
 

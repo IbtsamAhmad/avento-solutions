@@ -6,6 +6,7 @@
 .form-container {
   text-align: center;
    overflow: hidden;
+   margin-top: 4rem;
   .form-heading {
     @include aventoHeading;
   }
@@ -50,11 +51,13 @@
       margin: 20px 0;
       background: #F6F7F9;
       border-radius: 30px;
-      padding: 12px;
+      padding: 12px 20px;
       border: none;
       outline: none;
       z-index: 2;
       position: relative;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
       &:focus{
         outline: 1px solid #61BDD2;
       }

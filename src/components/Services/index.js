@@ -19,7 +19,7 @@ const Services = () => {
       <Container>
         <Row className="serviceCards-row">
           <Col sm={12} md={6} lg={4}>
-            <Card className="service-card" data-aos="fade-right">
+            <Card className="service-card">
               <Card.Body>
                 <WebService />
                 <h1>Web Development</h1>
@@ -32,7 +32,7 @@ const Services = () => {
             </Card>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Card className="service-card" data-aos="fade-up">
+            <Card className="service-card" >
               <Card.Body>
                 <MobileService />
                 <h1>Mobile App Development</h1>
@@ -45,7 +45,7 @@ const Services = () => {
             </Card>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Card className="service-card" data-aos="fade-left">
+            <Card className="service-card" >
               <Card.Body>
                 <EnterpriseService />
                 <h1>Enterprise Solutions</h1>
@@ -61,7 +61,7 @@ const Services = () => {
         </Row>
         <Row className="serviceCards-row">
           <Col sm={12} md={6} lg={4}>
-            <Card className="service-card" data-aos="fade-right">
+            <Card className="service-card" >
               <Card.Body>
                 <ConsultationService />
                 <h1>Business Consultancy</h1>
@@ -73,7 +73,7 @@ const Services = () => {
             </Card>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Card className="service-card" data-aos="fade-up">
+            <Card className="service-card" >
               <Card.Body>
                 <AnalyticsService />
                 <h1>Data Analytics</h1>
@@ -86,7 +86,7 @@ const Services = () => {
             </Card>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Card className="service-card" data-aos="fade-left">
+            <Card className="service-card">
               <Card.Body>
                 <SeoService />
                 <h1>SEO</h1>

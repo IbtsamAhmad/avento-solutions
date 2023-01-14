@@ -129,7 +129,7 @@ const Footer = () => {
             </ul>
           </Col>
         </Row>
-        <p className="copyRight">© 2022 Avento Solutions</p>
+        <p className="copyRight">© 2023 Avento Solutions</p>
       </Container>
     </div>
   );

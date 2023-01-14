@@ -10,24 +10,29 @@ import Database from "../../icons/Database.svg";
 import Backend from "../../icons/Backend.svg";
 import Mobile from "../../icons/Mobile.svg";
 
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
+
 const Technologies = () => {
   const frontend = (
-    <div>
+    <div className="technology-btn">
       <Frontend /> Frontend Development
     </div>
   );
   const backend = (
-    <div>
+    <div className="technology-btn">
       <Backend /> Backend Development
     </div>
   );
   const mobile = (
-    <div>
+    <div className="technology-btn">
       <Mobile /> Mobile Development
     </div>
   );
   const database = (
-    <div>
+    <div className="technology-btn">
       <Database /> Databases
     </div>
   );
@@ -60,58 +65,74 @@ const Technologies = () => {
             <Col sm={12} md={7} lg={{ span: 6, offset: 1 }}>
               <Tab.Content>
                 <Tab.Pane eventKey="frontend">
-                  <Row>
-                    <Col sm={4} md={4} lg={4} className="technology-col">
-                      <img
-                        src="/assets/images/technology1.png"
-                        alt=""
-                        className="technology-img"
-                      />
-                      <p className="technologyName">HTML5</p>
-                    </Col>
-                    <Col sm={4} md={4} lg={4} className="technology-col">
-                      <img
-                        src="/assets/images/technology2.png"
-                        alt=""
-                        className="technology-img"
-                      />
-                      <p className="technologyName">CSS3</p>
-                    </Col>
-                    <Col sm={4} md={4} lg={4} className="technology-col">
-                      <img
-                        src="/assets/images/technology3.png"
-                        alt=""
-                        className="technology-img"
-                      />
-                      <p className="technologyName">JavaScript</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col sm={4} md={4} lg={4} className="technology-col">
-                      <img
-                        src="/assets/images/technology4.png"
-                        alt=""
-                        className="technology-img"
-                      />
-                      <p className="technologyName">JQuery</p>
-                    </Col>
-                    <Col sm={4} md={4} lg={4} className="technology-col">
-                      <img
-                        src="/assets/images/technology5.png"
-                        alt=""
-                        className="technology-img"
-                      />
-                      <p className="technologyName">Angular Js</p>
-                    </Col>
-                    <Col sm={4} md={4} lg={4} className="technology-col">
-                      <img
-                        src="/assets/images/technology6.png"
-                        alt=""
-                        className="technology-img"
-                      />
-                      <p className="technologyName">React Js</p>
-                    </Col>
-                  </Row>
+                  <OwlCarousel
+                    className="owl-theme"
+                    loop
+                    items={1}
+                    nav={false}
+                    dots={true}
+                    margin={0}
+                    // center={true}
+                    navText={[
+                      "<div className='nav-btn prev-slide'><i className='fas fa-arrow-left'></i></div>",
+                      "<div className='nav-btn next-slide'><i className='fas fa-arrow-right'></i></div>",
+                    ]}
+                  >
+                    <div>
+                      <Row>
+                        <Col sm={4} md={4} lg={4} className="technology-col">
+                          <img
+                            src="/assets/images/technology1.png"
+                            alt=""
+                            className="technology-img"
+                          />
+                          <p className="technologyName">HTML5</p>
+                        </Col>
+                        <Col sm={4} md={4} lg={4} className="technology-col">
+                          <img
+                            src="/assets/images/technology2.png"
+                            alt=""
+                            className="technology-img"
+                          />
+                          <p className="technologyName">CSS3</p>
+                        </Col>
+                        <Col sm={4} md={4} lg={4} className="technology-col">
+                          <img
+                            src="/assets/images/technology3.png"
+                            alt=""
+                            className="technology-img"
+                          />
+                          <p className="technologyName">JavaScript</p>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col sm={4} md={4} lg={4} className="technology-col">
+                          <img
+                            src="/assets/images/technology4.png"
+                            alt=""
+                            className="technology-img"
+                          />
+                          <p className="technologyName">JQuery</p>
+                        </Col>
+                        <Col sm={4} md={4} lg={4} className="technology-col">
+                          <img
+                            src="/assets/images/technology5.png"
+                            alt=""
+                            className="technology-img"
+                          />
+                          <p className="technologyName">Angular Js</p>
+                        </Col>
+                        <Col sm={4} md={4} lg={4} className="technology-col">
+                          <img
+                            src="/assets/images/technology6.png"
+                            alt=""
+                            className="technology-img"
+                          />
+                          <p className="technologyName">React Js</p>
+                        </Col>
+                      </Row>
+                    </div>
+                  </OwlCarousel>
                 </Tab.Pane>
                 <Tab.Pane eventKey="backend">Backend</Tab.Pane>
                 <Tab.Pane eventKey="mobile">Mobile</Tab.Pane>

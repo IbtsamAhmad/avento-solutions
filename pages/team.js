@@ -16,7 +16,7 @@ import ContactForm from "../src/components/ContactForm";
 const TeamPage = () => {
   return (
     <div className="teams-container">
-      <Container fluid>
+      <Container>
         <Row className="teamsRow-container align-items-center justify-content-between">
           <Col sm={12} md={6} lg={6} className="team-colOne">
             <h1 className="heading">
@@ -27,13 +27,21 @@ const TeamPage = () => {
               here to help you get your work done as quickly as possible. Our
               general role is vital to the growth of effective communications.
             </p>
+            <p className="description">
+            Project description our motive is to bring your ideas to life! Avento solutions is here to help you get your work done as quickly as possible.
+            </p>
             <button className="hireButton">Hire Developer</button>
           </Col>
           <Col sm={12} md={6} lg={6} className="teamsImgColumn">
-            <img
+            {/* <img
               src="/assets/images/teamsHeader.png"
               className="teamsHeaderimg"
               alt="teamsHeader"
+            /> */}
+              <img
+              src="assets/images/home-hero-img.png"
+              alt=""
+              className="home-hero-img"
             />
           </Col>
         </Row>
@@ -182,6 +190,7 @@ const TeamPage = () => {
               HR
             </Tab>
           </Tabs>
+          <button className="hire-btn">Hire Now</button>
         </div>
         <ContactForm info="Project description our motive is to bring your ideas to life! Avento solutions is here to help you get your work done as quickly as possible." />
       </Container>

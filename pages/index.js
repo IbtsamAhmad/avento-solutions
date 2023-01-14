@@ -44,7 +44,7 @@ export default function Home() {
       <Technologies />
       <Testimonials />
       <FindUs />
-      <ContactForm />
+      <ContactForm info="Project description our motive is to bring your ideas to life! Avento solutions is here to help you get your work done as quickly as possible."/>
     </div>
   );
 }

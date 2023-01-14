@@ -52,6 +52,7 @@
 
     .home-hero-img {
       margin-top: -3rem;
+      width: 100%;
     }
   }
 
@@ -116,7 +117,7 @@
       }
 
       &:hover {
-        transform: translateY(-20px) !important;
+        // transform: translateY(-20px) !important;
         background: linear-gradient(180deg, #61BDD2 0%, #4194A7 100%);
         color: #ffffff;
         h1{
@@ -236,6 +237,9 @@
     width: 70%;
     height: 390px;
     margin: 15% 0% 0% 30%;
+  }   
+   .swiper-slide-active{
+    border-radius: 20px !important;
   }
 
   .swiper-slide {
@@ -243,8 +247,9 @@
     height: auto;
     background: #ffffff;
     box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
-    border-radius: 20px;
+
     padding: 30px 15px;
+
     .testimonial-img {
     }
     .review {

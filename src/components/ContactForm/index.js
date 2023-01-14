@@ -8,7 +8,7 @@ import PlaneOne from "../../icons/PlaneOne.svg";
 import PlaneTwo from "../../icons/PlaneTwo.svg";
 import Linked from "../../icons/Linked.svg";
 
-const ContactForm = ({ info}) => {
+const ContactForm = ({ info }) => {
   const {
     register,
     handleSubmit,
@@ -18,12 +18,10 @@ const ContactForm = ({ info}) => {
   console.log(errors);
 
   return (
-    <div className="form-container">
+    <div className="form-container" id="form-container">
       <Container>
         <h2 className="form-heading">Let&apos;s get started today!</h2>
-        <p className="form-info">
-          {info}
-        </p>
+        <p className="form-info">{info}</p>
         <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
           <div className="planeOne">
             <PlaneOne />
@@ -102,7 +100,15 @@ const ContactForm = ({ info}) => {
             Send Message
           </Button>
         </form>
-        <p className="connect">Connect with us <span/><Linked/></p>
+        <p className="connect">
+          Connect with us <span />
+          <a
+            target="blank"
+            href="https://www.linkedin.com/company/avento-solutions/"
+          >
+            <Linked />
+          </a>
+        </p>
       </Container>
     </div>
   );

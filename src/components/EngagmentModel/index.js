@@ -18,8 +18,8 @@ const EngagementModel = () => {
           <Col sm={12} md={6} lg={{ offset: 2, span: 4 }}>
             <Card
               className="engageCard"
-              data-aos="fade-right"
-              data-aos-duration="1500"
+              // data-aos="fade-right"
+              // data-aos-duration="1500"
             >
               <Card.Body>
                 <Engage />
@@ -36,8 +36,6 @@ const EngagementModel = () => {
           <Col sm={12} md={6} lg={{ offset: 0, span: 4 }}>
             <Card
               className="engageCard cardTwo"
-              data-aos="fade-left"
-              data-aos-duration="1500"
             >
               <Card.Body>
                 <Engage />

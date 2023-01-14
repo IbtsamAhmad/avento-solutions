@@ -1,11 +1,14 @@
-@media screen  {
-    
-}
 
 @media (min-width: 2001px) {
 
 }
-@media (min-width: 1900px) { }
+@media (min-width: 1900px) { 
+  
+  .container {
+      max-width: 1450px !important;
+  }
+
+}
 @media (max-width: 1300px) { 
 //   .header-container .site-header .custom-class .navbar-nav a {
 //     margin: 0 0.5rem;
@@ -13,6 +16,11 @@
 }
 
 @media (max-width: 990px) {
+  .active::after{
+display: none !important;
+
+
+  }
     .header-container {
         .site-header {
             .navbar-brand{
